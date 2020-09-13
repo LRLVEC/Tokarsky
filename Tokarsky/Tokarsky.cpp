@@ -440,7 +440,7 @@ int main()
 		}
 	};
 	Window::WindowManager wm(winPara);
-	OpenGL::PathTracing pathTracer(winPara.size.size, 10000, 10);
+	OpenGL::PathTracing pathTracer(winPara.size.size, 100, 10);
 	wm.init(0, &pathTracer);
 	glfwSwapInterval(1);
 	FPS fps;
